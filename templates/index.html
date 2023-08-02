@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hello from Flask</title>
+        <script>
+            $SCRIPT_ROOT={{ request.script_root|tojson }};
+        </script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <script src="{{ url_for('static', filename='js/jquery-3.7.0.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">
+                <div class="inner-row">
+                    <select class="input-selects" id="input-1">
+                    {% for item in items %}
+                        <option value="{{ item }}">{{ item }}</option>
+                    {% endfor %}
+                    </select>
+                </div>
+                <div class="inner-row">
+                    <textarea class="item-description">
+                        Item 1 description
+                    </textarea>
+                </div>
+            </div>
+            <div class="column">
+                <h1>+</h1>
+            </div>
+            <div class="column">
+                <div class="inner-row">
+                    <select class="input-selects" id="input-2">
+                    {% for item in items %}
+                        <option value="{{ item }}">{{ item }}</option>
+                    {% endfor %}
+                    </select>
+                </div>
+                <div class="inner-row">
+                    <textarea class="item-description">
+                        Item 2 description
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="wide-column">
+                <button class="equals-button">=</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="wide-column">
+                <div class="inner-row">
+                    <div id="result">Result</div>
+                </div>
+                <div class="inner-row">
+                    <textarea class="item-description">
+Result description
+                    </textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

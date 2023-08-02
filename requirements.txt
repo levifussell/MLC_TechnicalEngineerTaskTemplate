@@ -1,0 +1,4 @@
+flask
+lancedb
+gpt4all
+pandas

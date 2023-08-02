@@ -1,0 +1,79 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 32%;
+    height: 33vh;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .wide-column {
+    float: left;
+    width: 98%;
+    height: 33vh;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+  }
+  
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.inner-row {
+  width: 100%;
+}
+
+/* Clear floats after image containers */
+.inner-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.equals-button {
+  width: 400px;
+  height: 150px;
+  font-size: 30px;
+}
+
+#result {
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.input-selects {
+  width: 400px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.item-description {
+  min-height: 100px;
+  min-width: 300px;
+  background-color: #ddd;
+  border-color: #777;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 4px;
+}
