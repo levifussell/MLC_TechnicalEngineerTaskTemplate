@@ -1,1 +1,4 @@
-Generate a description for {item}
+{examples}
+INPUT:
+{item}
+OUTPUT:

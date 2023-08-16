@@ -17,3 +17,6 @@ Run from a shell with `flask run` in the root project directory. If you want to 
 - AJAX intro: https://flask.palletsprojects.com/en/2.0.x/patterns/jquery/
 - LanceDB intro: https://lancedb.github.io/lancedb/basic/
 - LanceDB API reference: https://lancedb.github.io/lancedb/python/python/#lancedb.table.Table.search
+
+# NOTES:
+```flask run --debug``` seems to not work.

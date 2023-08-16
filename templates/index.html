@@ -20,6 +20,11 @@
                     </select>
                 </div>
                 <div class="inner-row">
+                    <textarea class="item-recipe">
+                        Item 1 recipe
+                    </textarea>
+                </div>
+                <div class="inner-row">
                     <textarea class="item-description">
                         Item 1 description
                     </textarea>
@@ -37,6 +42,11 @@
                     </select>
                 </div>
                 <div class="inner-row">
+                    <textarea class="item-recipe">
+                        Item 2 recipe
+                    </textarea>
+                </div>
+                <div class="inner-row">
                     <textarea class="item-description">
                         Item 2 description
                     </textarea>
@@ -44,6 +54,10 @@
             </div>
         </div>
         <div class="row">
+            <div class="wide-column">
+                <p>INFO:</p>
+                <textarea id="result-info">...</textarea>
+            </div>
             <div class="wide-column">
                 <button class="equals-button">=</button>
             </div>
@@ -54,10 +68,31 @@
                     <div id="result">Result</div>
                 </div>
                 <div class="inner-row">
+                    <textarea class="item-recipe">
+Result recipe
+                    </textarea>
+                </div>
+                <div class="inner-row">
                     <textarea class="item-description">
 Result description
                     </textarea>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <ul id="recipes-list">
+                    {% for recipe in recipes %}
+                        <li>{{ recipe }} = </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="column">
+                <ul id="items-list">
+                    {% for item in items %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </body>
